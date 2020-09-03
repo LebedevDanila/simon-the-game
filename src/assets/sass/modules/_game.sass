@@ -1,0 +1,83 @@
+.game
+  display: flex
+  align-items: center
+
+  &__circle
+    position: relative
+    border-radius: 150px
+    width: 300px
+    height: 300px
+    margin-right: 3em
+    box-shadow: 2px 1px 12px #aaa
+
+    &-part
+      opacity: 0.6
+      height: 300px
+      border-radius: 150px 150px 150px 150px
+      position: absolute
+      text-indent: 10000px
+      width: 300px
+      cursor: pointer
+    
+    &-part:hover
+      border: 2px solid $black
+  
+    &-part.active
+      opacity: 1
+
+    .red
+      background: #FF5643
+      clip: rect(0px, 300px, 150px, 150px)
+
+    .blue
+      background: dodgerblue
+      clip: rect(0px, 150px, 150px, 0px)
+
+    .yellow
+      background: #FEEF33
+      clip: rect(150px, 150px, 300px, 0px)
+
+    .green
+      background: #BEDE15
+      clip: rect(150px,300px, 300px, 150px)
+  
+  &__info
+    
+    &-round
+      font-size: 32px
+      font-weight: bold
+      margin-bottom: 20px
+    
+    &-start
+      width: 200px
+      height: 45px
+      font-size: 18px
+      font-weight: bold
+      margin-bottom: 30px
+      color: $white
+      background: blue
+      border: none
+      cursor: pointer
+      border-radius: 5px
+    
+    &-lose
+      margin-bottom: 20px
+  
+  &__options
+
+    &-title
+      font-size: 25px
+      margin-bottom: 10px
+    
+    &-item
+      margin-bottom: 7px
+      display: flex
+      align-items: center
+
+      input
+        width: 18px
+        height: 18px
+
+      span
+        font-size: 18px
+        margin-left: 5px
