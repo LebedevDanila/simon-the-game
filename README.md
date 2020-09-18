@@ -1,4 +1,4 @@
-# test-assignment-for-medods-simon-the-game
+# simon-the-game
 
 ## Project setup
 ```
